@@ -12,17 +12,27 @@ func Test_twoSum(t *testing.T) {
 		target int
 		result []int
 	}{
-		"test 1": {
+		"tc1": {
 			input:  []int{2, 7, 11, 15},
 			target: 9,
-			result: []int{1, 0},
+			result: []int{0, 1},
+		},
+		"tc2": {
+			input:  []int{3, 2, 4},
+			target: 6,
+			result: []int{1, 2},
+		},
+		"tc3": {
+			input:  []int{3, 3},
+			target: 6,
+			result: []int{0, 1},
 		},
 	}
 
 	for testName, tc := range testCases {
 		t.Run(testName, func(t *testing.T) {
 			result := twoSum(tc.input, tc.target)
-			assert.EqualValues(t, tc.result, result)
+			assert.ElementsMatch(t, tc.result, result)
 		})
 	}
 }
