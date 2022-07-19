@@ -11,9 +11,21 @@ func Test_isPalindrome(t *testing.T) {
 		input  int
 		result bool
 	}{
-		"test 1": {
+		"tc1": {
 			input:  121,
 			result: true,
+		},
+		"tc2": {
+			input:  969,
+			result: true,
+		},
+		"tc3": {
+			input:  198,
+			result: false,
+		},
+		"tc4": {
+			input:  -121,
+			result: false,
 		},
 	}
 

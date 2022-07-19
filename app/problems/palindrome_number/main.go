@@ -2,6 +2,7 @@ package palindromenumber
 
 import "strconv"
 
+// Problem: https://leetcode.com/problems/palindrome-number/
 func isPalindrome(x int) bool {
 	s := strconv.Itoa(x)
 	r := []rune(s)
