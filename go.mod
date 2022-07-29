@@ -1,4 +1,4 @@
-module dsa_go
+module randheer094/dsa_go
 
 go 1.17
 
